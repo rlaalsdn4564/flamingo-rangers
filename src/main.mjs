@@ -310,11 +310,11 @@ listen(window, "pagehide", (e) => {
 listen(window, "pageshow", () => stepper.reset());
 try {
   const [heroes, enemies, ...backdrops] = await Promise.all([
-    load("/art/rangers-atlas.png"),
-    load("/art/enemies-atlas.png"),
-    load("/art/glass-avenue.png"),
-    load("/art/canal-junction.png"),
-    load("/art/central-tower.png"),
+    load("./art/rangers-atlas.png"),
+    load("./art/enemies-atlas.png"),
+    load("./art/glass-avenue.png"),
+    load("./art/canal-junction.png"),
+    load("./art/central-tower.png"),
   ]);
   await document.fonts.ready;
   renderer = createRenderer(
